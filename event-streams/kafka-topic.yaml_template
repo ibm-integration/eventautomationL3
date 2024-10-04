@@ -1,0 +1,162 @@
+# © Copyright IBM Corporation 2023
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#apiVersion: eventstreams.ibm.com/v1beta2
+#kind: KafkaTopic
+#metadata:
+#  name: orders
+#  namespace: {{NAMESPACE}}
+#  labels:
+#    eventstreams.ibm.com/cluster: es-demo
+#spec:
+#  config:
+#    min.insync.replicas: '1'
+#    retention.bytes: '302428800'
+#  partitions: 3
+#  replicas: 3
+#  topicName: ORDERS
+#---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: products
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '302428800'
+  partitions: 3
+  replicas: 3
+  topicName: PRODUCTS
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: deliveries
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '302428800'
+  partitions: 3
+  replicas: 3
+  topicName: DELIVERY
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: inventory
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '302428800'
+  partitions: 3
+  replicas: 3
+  topicName: INVENTORY
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: pricing
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '302428800'
+  partitions: 3
+  replicas: 3
+  topicName: PRICING
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: cancellations
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '1024288000'
+  partitions: 3
+  replicas: 3
+  topicName: CANCELLATIONS
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: returns
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '1024288000'
+  partitions: 3
+  replicas: 3
+  topicName: RETURNS
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: customer-service
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '1024288000'
+  partitions: 3
+  replicas: 1
+  topicName: CUSTOMER.SERVICE
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: customers
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '1024288000'
+  partitions: 3
+  replicas: 3
+  topicName: CUSTOMERS
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: loyalty-app
+  namespace: {{NAMESPACE}}
+  labels:
+    eventstreams.ibm.com/cluster: es-demo
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '1024288000'
+  partitions: 3
+  replicas: 1
+  topicName: LOYALTY.APP
