@@ -85,11 +85,8 @@ done
 line_separator "SUCCESS - KAFKA TOPIC CREATED"
 
 echo ""
-line_separator "START - INSTALLING KAFKA CONNECT"
+line_separator "START - INSTALLING KAFKA USERS"
 
 oc apply -f event-streams/kafka-users.yaml
 
-scripts/08c-event-streams-kafka-connect-config.sh
-scripts/08e-event-streams-kafka-connector-datagen-config.sh
-
-line_separator "SUCCESS - KAFKA CONNECT CREATED"
+line_separator "SUCCESS - KAFKA CONNECT USERS"
