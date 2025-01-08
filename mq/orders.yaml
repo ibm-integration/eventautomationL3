@@ -29,10 +29,10 @@ metadata:
   name: orders
   namespace: tools
 spec:
-  version: 9.4.0.5-r2
+  version: 9.4.1.0-r2
   license:
     accept: true
-    license: L-JTPV-KYG8TF
+    license: L-QYVA-B365MB
     use: "NonProduction"
   web:
     enabled: true
