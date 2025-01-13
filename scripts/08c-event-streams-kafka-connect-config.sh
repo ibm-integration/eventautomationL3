@@ -1,9 +1,10 @@
 #!/bin/sh
 if [ ! command -v oc &> /dev/null ]; then echo "oc could not be found"; exit 1; fi;
+CP4I_VER='16.1.1' 
 if [ -z "$CP4I_VER" ]; then echo "CP4I_VER not set, it must be provided on the command line."; exit 1; fi;
 echo "CP4I_VER has been set to " $CP4I_VER
 case "$CP4I_VER" in
-   "2023.4" | "16.1.0")
+   "2023.4" | "16.1.0" | "16.1.1" )
       ;;
    *)
       echo "This script is for CP4I v2023.4 or v16.1.0"
@@ -30,7 +31,7 @@ case "$CP4I_VER" in
     "2023.4")
         ES_VERSION='11.3.2'
         ;;
-    "16.1.0")
+    "16.1.0" | "16.1.1" )
         ES_VERSION='11.5.2'
         ;;
 esac
