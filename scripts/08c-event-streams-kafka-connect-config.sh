@@ -32,7 +32,7 @@ case "$CP4I_VER" in
         ES_VERSION='11.3.2'
         ;;
     "16.1.0" | "16.1.1" )
-        ES_VERSION='11.5.2'
+        ES_VERSION='11.6.0'
         ;;
 esac
 echo "Getting Bootstrap information..."
