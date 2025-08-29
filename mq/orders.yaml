@@ -29,7 +29,7 @@ metadata:
   name: orders
   namespace: tools
 spec:
-  version: 9.4.3.0-r1
+  version: 9.4.3.0-r2
   license:
     accept: true
     license: L-CYPF-CRPF3H
