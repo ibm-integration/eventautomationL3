@@ -67,20 +67,13 @@ spec:
         artifacts:
           - type: jar
             url: https://github.com/callumpjackson/tempbarfiles/raw/main/kafka-connect-acme-source-0.0.1-jar-with-dependencies.jar
-          - type: maven
-            artifact: apicurio-registry-serdes-avro-serde
-            group: io.apicurio
-            version: 2.5.10.Final
-          - type: maven
-            artifact: apicurio-registry-utils-converter
-            group: io.apicurio
-            version: 2.5.10.Final
-
+          - type: zip
+            url: 'https://repo1.maven.org/maven2/io/apicurio/apicurio-registry-distro-connect-converter/2.6.13.Final/apicurio-registry-distro-connect-converter-2.6.13.Final.zip'
       - name: mq-source
         artifacts:
           - type: jar
-            url: https://github.com/ibm-messaging/kafka-connect-mq-source/releases/download/v2.1.0/kafka-connect-mq-source-2.1.0-jar-with-dependencies.jar
+            url: https://github.com/ibm-messaging/kafka-connect-mq-source/releases/download/v2.5.0/kafka-connect-mq-source-2.5.0-jar-with-dependencies.jar
       - name: mq-sink
         artifacts:
           - type: jar
-            url: https://github.com/ibm-messaging/kafka-connect-mq-sink/releases/download/v2.2.0/kafka-connect-mq-sink-2.2.0-jar-with-dependencies.jar
+            url: https://github.com/ibm-messaging/kafka-connect-mq-sink/releases/download/v2.2.1/kafka-connect-mq-sink-2.2.1-jar-with-dependencies.jar
